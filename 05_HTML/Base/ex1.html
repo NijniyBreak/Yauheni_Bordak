@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table width="700px" border="1">
+    <tr>
+        <td>Строка поиска
+        <form action="http://fe.it-academy.by/TestForm.php" method="get" target="_blank">
+    <input type="search" name="Im"><input type="submit" value="Искать"><br>
+    <input type="checkbox"> "на сайте"<input type="checkbox"> "в google"</form><br>
+    "Длина запроса не более 10 символов"</td>
+           
+    <td>Строка поиска
+        <form action="http://fe.it-academy.by/TestForm.php" method="post">
+        <input type="search" name="Im">*<input type="submit" value="искать"><br>
+        <input type="checkbox"> "на сайте"<input type="checkbox"></form> "в google"<br>
+        Автофокус в поле поиска
+    </td>
+        </tr>
+        <tr>
+            <td>Авторизуйтесь
+            <form action="http://fe.it-academy.by/TestForm.php" method="get">
+            <input type="login" name="bmw">*Логин<br>
+            <input type="password" name="bmw">*Пароль<br>
+            <input type="checkbox">"оставаться в системе"<br>
+            <input type="submit" value="Войти"></form><br>
+            "*-обязательное поле"</td>
+            <TD>Как вам?
+            <form action="http://fe.it-academy.by/TestForm.php" method="post">
+            <input type="checkbox">ничего<br>
+            <input type="checkbox">неплохо<br>
+            <input type="checkbox">хорошо<br>
+            <input type="checkbox">супер<br>
+            <input type="submit" value="Отправить"></form><br>
+            Есть скрытое поле<br>
+            name=date_voite, value="2013.12.31"
+            </TD></tr>
+            <tr>
+                <td>Оставьте Ваш отзыв
+                    <form action="http://fe.it-academy.by/TestForm.php" method="post">
+                    <input type="name" name="bmw">*Имя<br>
+                    <input type="name" name="bmw">*e-mail<br>
+                    <textarea>Форма отправки</textarea>
+                    <input type="submit" value="Отправить"></form><br>
+                    *-обязательное поле<br>
+                    после e-mail с проверкой<br>
+                    метод post
+                </td>
+                <td>Города РБ 
+                    <form action="http://fe.it-academy.by/TestForm.php" method="post">
+                    <select name="select" size="8" multiple>
+                        <optgroup label="Города Рб">
+                        <option value="1">Брест</option>
+                        <option value="2">Минск</option>
+                        <option value="3">Витебск</option>
+                        </optgroup>
+                        <optgroup label="Города России">
+                        <option value="4">Москва</option>
+                        <option value="5">Рязань</option>
+                        <option value="6">Магадан</option></optgroup
+                        </form>
+                        </td></tr> 
+                    </select
+            <tr>
+                <td>Upload<br>
+                Файл:<br>
+                <form action="http://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+                <input type="file" name="file_Field" dir=“ltr”><br>
+                Скрок сохранения(года)<br>
+                <input type="download" name="Im"><input type="submit" value="Загрузить"><br>
+                </form>
+                <td>
+                    Строка поиска
+                    <form action="http://fe.it-academy.by/TestForm.php" method="post">
+                    <input type="rusword" name="rusword" placeholder="Только русские буквы" required><br>
+                    Телефонный номер в формате<br>
+                    +ХХХ-ХХ-ХХХХХХХ, где Х - любое число<br>
+                    <input type="phone" name="phone" placeholder="+375291234567" required><br>
+                    <input type="submit" value="Проверить">
+                </td>
+            </tr>
+            
+
+            
+
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </table>
+
+    
+    
+    
+</body>
+</html>
