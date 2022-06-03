@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+body{
+width: 100%;
+height: 500px;
+
+}
+.list>div{
+border-style: solid;
+border-width: 1px;
+cursor: move;
+float: left;
+width: 95px;
+height: 20px;
+}
+.list_more{
+width: 200px;
+display: none;
+}
+.list_more>div{
+border-style: solid;
+border-width: 1px;
+cursor: ne-resize;
+
+}
+.list>div:hover div.list_more{
+display: block;
+position: absolute;
+left: 145px;
+top: 29px;
+z-index: 1;
+}
+@media all and (max-width:590px){
+.list{
+    width: 100px;
+}
+}
+
+</style>
+</head>
+<body>
+<div class="list">
+<div>Понедельник</div>
+<div>Вторник</div>
+<div>Среда
+<div class="list_more">
+<div>Завтрак</div>
+<div>Обед</div>
+<div>Ужин</div>
+</div>
+</div>
+<div>Четверг</div>
+<div>Пятница</div>
+</div>
+</body>
+</html>
